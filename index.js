@@ -173,7 +173,7 @@ const CatGIFS = ["https://tenor.com/view/kitty-review-cute-kitty-funny-cat-cat-r
 
 const IfOnlyGIFS = ["https://tenor.com/view/mercy-alcohol-gif-24056926", "https://tenor.com/view/kids-getting-run-over-meme-ad-kids-run-over-gif-22566267", "https://tenor.com/view/dating-gif-26388733", "https://tenor.com/view/ip-twitter-gif-26177251", "https://tenor.com/view/ao-oni-knife-if-only-i-had-a-knife-funny-jazzycars-gif-21089063"]
 
-const RUI_BALLS = ["I need balls", "I NEED BALLS", "https://tenor.com/view/kamishiro-rui-rui-kamishiro-this-is-a-joke-project-sekai-puroseka-gif-25353578"]
+const RUI_BALLS = ["I need balls", "I NEED BALLS", "https://tenor.com/view/kamishiro-rui-rui-kamishiro-this-is-a-joke-project-sekai-puroseka-gif-25353578", "Paraplégico que anda"]
 
 const ArgumentoCLOSE_UP = ["shut the hell up and jump off a building or smth", "this dumb overconfident anime girl with no right or point to live on this planet wont stop bothering this guy that just wants to chill", "im gonna find this annoying overconfident fatherless loser with no point in life but to exist just for the worst of things to happen to her child", "i have to either 1v1 them or see them leave", "ur dad ran from you", "you probably function like a machine, being used over and over again and now it created you, some random woman that roams around in games where people are mostly chill and randomly start arguments bec"]
 
@@ -181,7 +181,7 @@ const AprilFools2023 = ["https://media.discordapp.net/attachments/49714279696105
 
 
 //TriggerHours (non functional)
-const AmbarQuotes = ["AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "cringe", "lmao quem é esse", "do not disturb the lord", "hm....", "Sim ? oh espera...", "ayo ?"]
+const AmbarQuotes = ["AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "cringe", "lmao quem é esse", "do not disturb the lord", "hm....", "Sim ? oh espera...", "ayo ?", "AmbarFox got revenge on Enderman", "stop annoying him", "get real", "kisses"]
 
 //TriggerMessages
 client.on('messageCreate', (message) => {
@@ -324,7 +324,7 @@ client.on("messageCreate", message => {
 })
 
 //activ shenanigans
-const startupmessages = ["with depression", "amogus", "with balls", "KILLKILLKILLKILL", "with windows 10", "miceraft", "a delicate game of chess", "with words", "with ur feelings", "along with u", "HIDE N SEEK BITCH", "with yo mom", "funny dream game", "fbi is spying on u", "REPLIT DOT COM", "famousphobia", "startupmessages", "engineer", "cable management", "minecraft modpacks", "discord 2", "Tinky - unfortunaly no", "with dementia", "divorce sim", "funny winter game", "*stalking", "walter, put your", "I AM THE ONE WHO HEARS", "I got ur ip", "kys", "waterlemon eating", "wrindows_9", "touhou", "YATTA", "rui simulator", "index.js", "README", "discord.js v69", "without motivation", "dw", "dementia", "dementia", "dementia", "OFF", "shut the fuck up, Im balling", "Currently playing:", "Playing", "boblox", "an awful of game of checkers", "Hit error code 429", "/dinsi", "reimu gaming", "miku gaming", "cirno gaming", "rythme gaymes", "cardiac arrest", "amercia sim", "capitalism"]
+const startupmessages = ["with depression", "amogus", "with balls", "KILLKILLKILLKILL", "with windows 10", "miceraft", "a delicate game of chess", "with words", "with ur feelings", "along with u", "HIDE N SEEK BITCH", "with yo mom", "funny dream game", "fbi is spying on u", "REPLIT DOT COM", "famousphobia", "startupmessages", "engineer", "cable management", "minecraft modpacks", "discord 2", "Tinky - unfortunaly no", "with dementia", "divorce sim", "funny winter game", "*stalking", "walter, put your", "I AM THE ONE WHO HEARS", "I got ur ip", "kys", "waterlemon eating", "wrindows_9", "touhou", "YATTA", "rui simulator", "index.js", "README", "discord.js v69", "without motivation", "dw", "dementia", "dementia", "dementia", "OFF", "shut the fuck up, Im balling", "Currently playing:", "Playing", "boblox", "an awful of game of checkers", "Hit error code 429", "/dinsi", "reimu gaming", "miku gaming", "cirno gaming", "rythme gaymes", "cardiac arrest", "amercia sim", "capitalism", "flashii chat addiction desu yo", "YOU ARE PLAYING MINECRAFT", "looking for diamonds", "Balls like jupiter", "is he trolling ?", "Im normal"]
 const randomstartup = startupmessages[Math.floor(Math.random() * startupmessages.length)]
 const watchupmessages = ["over", "you", "twicth", "every single of ur moves", "ur house"]
 
