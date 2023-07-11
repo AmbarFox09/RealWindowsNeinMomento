@@ -152,7 +152,7 @@ const FBI_OPEN_UP = ["Fbi", "FBI", "fbi"]
 const WindowsWords = ["windows 10", "windows 11", "Windows 10", "Windows 11", "WINDOWS 10", "WINDOWS 11"]
 const UnsaidWords = ["me when", "Me when", "Me When", "me When", "ME WHEN"]
 const SaidWords = ["Eu quando", "EU QUANDO", "eu quando", "eU quando", "Eu Quando"]
-const Ambar = ["Ambar", "ambar", "AMBAR", "pedro", "Pedro", "PEDRO", "<@846074657240645653>"]
+const Ambar = ["Ambar", "ambar", "AMBAR", "<@846074657240645653>"]
 const ratiOWOrds = ["ratio", "RATIO", "bozo", "BOZO", "don’t care", "DONT CARE", "dont care", "Don't care", "Dont care", "didn’t ask", "DIDNT ASK", "didnt ask", "DIDN'T ASK", " L ", " kys", " KYS", "cry about it", "cry abt it", "CRY ABOUT IT", "get real", "GET REAL", "who asked", "WHO ASKED", "cope", "COPE", "Cope", "!ratio"]
 const CatWords = ["this is cat is", "THIS CAT IS", "This Cat Is", "this cat is", "!cat", "This cat is"]
 const AchoWords = ["Acho", "acho", "ACHO"]
@@ -161,6 +161,7 @@ const IfOnlyWords = ["If only", "IF ONLY", "ifonly", "if only", "IFONLY", "IfOnl
 const RuiWords = ["rui", "RUI", "Rui", "rUI", "RuI", "<@584137309423796224>", "ruI", "rUi", "RUi"]
 const RobloxArgumentWords = ["ClientSided", "Tactical_Neko", "RobloxArgument", "RobloxDrama", "argument", "Argument", "ARGUMENT", "aRGUMENT"]
 const SexUpdate2023 = ["!sex"]
+const BreakPointTrigger = ["Breaking Point", "BREAKING POINT", "breaking point", "breaking Point", "Breaking point", "breaking POINT", "BREAKING point"]
 
 //TriggerRandom
 const FBI_CLOSE_UP = ["Can't have shit in Detroit.", "HOW DID THEY FIND ME", "Gotta find a lawyer, I guess.", "ONDE?!", "Officer I can explain", "She's 16, almost 17, which is basically 18."]
@@ -173,12 +174,13 @@ const CatGIFS = ["https://tenor.com/view/kitty-review-cute-kitty-funny-cat-cat-r
 
 const IfOnlyGIFS = ["https://tenor.com/view/mercy-alcohol-gif-24056926", "https://tenor.com/view/kids-getting-run-over-meme-ad-kids-run-over-gif-22566267", "https://tenor.com/view/dating-gif-26388733", "https://tenor.com/view/ip-twitter-gif-26177251", "https://tenor.com/view/ao-oni-knife-if-only-i-had-a-knife-funny-jazzycars-gif-21089063"]
 
-const RUI_BALLS = ["I need balls", "I NEED BALLS", "https://tenor.com/view/kamishiro-rui-rui-kamishiro-this-is-a-joke-project-sekai-puroseka-gif-25353578", "Paraplégico que anda"]
+const RUI_BALLS = ["I need balls", "I NEED BALLS", "https://tenor.com/view/kamishiro-rui-rui-kamishiro-this-is-a-joke-project-sekai-puroseka-gif-25353578", "Paraplégico que anda", "Ho porra tirem a porra da lã"]
 
 const ArgumentoCLOSE_UP = ["shut the hell up and jump off a building or smth", "this dumb overconfident anime girl with no right or point to live on this planet wont stop bothering this guy that just wants to chill", "im gonna find this annoying overconfident fatherless loser with no point in life but to exist just for the worst of things to happen to her child", "i have to either 1v1 them or see them leave", "ur dad ran from you", "you probably function like a machine, being used over and over again and now it created you, some random woman that roams around in games where people are mostly chill and randomly start arguments bec"]
 
 const AprilFools2023 = ["https://media.discordapp.net/attachments/497142796961054721/1024064368377335851/attachment-8.gif", "https://tenor.com/view/%D1%85%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA-speech-bubble-gif-25663959", "https://tenor.com/view/smadging-speech-bubble-speech-bubble-smadging-gif-26061412", "https://tenor.com/view/speechbubble-speech-bubble-please-meme-gif-25693113", "https://tenor.com/view/volatil3-speech-bubble-gif-26229503", "https://tenor.com/view/lego-island-brickster-discord-speech-bubble-gif-25986049", "https://tenor.com/view/speech-bubble-gif-25352052", "https://tenor.com/view/cat-typing-speech-bubble-kitty-gif-25862715", "https://tenor.com/view/speech-bubble-gif-25768562", "https://tenor.com/view/ishowspeed-speech-bubble-gif-25561001"]
 
+const BreakPointQuotes = ["the food is being microwaved \n peep-peep-peep", "YE \n RACIST \n ALWAYS", "not bueno \n \n yes bueno", "death by radiation \n i didn't even choose you", "this is going to my chernobyl compilation", "microwave", "radiation man", "radioactive man why you give me cancer? \n its my favorite food"]
 
 //TriggerHours (non functional)
 const AmbarQuotes = ["AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "cringe", "lmao quem é esse", "do not disturb the lord", "hm....", "Sim ? oh espera...", "ayo ?", "AmbarFox got revenge on Enderman", "stop annoying him", "get real", "kisses"]
@@ -270,6 +272,13 @@ client.on('messageCreate', (message) => {
     if(message.author.bot) return false;
      if (message.content.includes(word)) {
       message.channel.send(sexupdating)
+    }
+  })
+  BreakPointTrigger.forEach((word) => {
+    const breakingthepoint = BreakPointQuotes[Math.floor(Math.random() * BreakPointQuotes.length)]
+    if(message.author.bot) return false;
+     if (message.content.includes(word)) {
+      message.channel.send(breakingthepoint)
     }
   })
   ratiOWOrds.forEach((word) => {
