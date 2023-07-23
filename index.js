@@ -128,6 +128,9 @@ if(message.author.bot) return false;
   if(message.content === "!deez nuts") {
     message.channel.send("AHHAHAHAH SO FUNNI")
   }
+  if(message.content === "!ping") {
+    message.channel.send("@everyone")
+  }
   if(message.content === "Boa noite") {
     message.channel.send("ACORDA PARA A VIDA BOI")
   }
@@ -136,6 +139,9 @@ if(message.author.bot) return false;
   }
   if(message.content === "!fumo") {
     message.channel.send("⠀⠀⡜⠁⠀⠈⢢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠋⠷⠶⠱⡄ \n⠀⢸⣸⣿⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠫⢀⣖⡃⢀⣸⢹ \n⠀⡇⣿⣿⣶⣤⡀⠀⠀⠙⢆⠀⠀⠀⠀⠀⣠⡪⢀⣤⣾⣿⣿⣿⣿⣸\n⠀⡇⠛⠛⠛⢿⣿⣷⣦⣀⠀⣳⣄⠀⢠⣾⠇⣠⣾⣿⣿⣿⣿⣿⣿⣽ \n⠀⠯⣠⣠⣤⣤⣤⣭⣭⡽⠿⠾⠞⠛⠷⠧⣾⣿⣿⣯⣿⡛⣽⣿⡿⡼\n⠀⡇⣿⣿⣿⣿⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠻⣿⣿⣮⡛⢿⠃\n⠀⠀⢸⠁⠀⠀⢠⣏⣨⣉⡃⠀⠀⠀⢀⣜⡉⢉⣇⠀⠀⠀⢹⡄⠀\n⠀⠀⡾⠄⠀⠀⢸⣾⢏⡍⡏⠑⠆⠀⢿⣻⣿⣿⣿⠀⠀⢰⠈⡇⠀\n⠀⢰⢇⢀⣆⠀⢸⠙⠾⠽⠃⠀⠀⠀⠘⠿⡿⠟⢹⠀⢀⡎⠀⡇⠀⠀\n⠀⠘⢺⣻⡺⣦⣫⡀⠀⠀⠀⣄⣀⣀⠀⠀⠀⠀⢜⣠⣾⡙⣆⡇⠀⠀\n⠀⠀⠀⠙⢿⡿⡝⠿⢧⡢⣠⣤⣍⣀⣤⡄⢀⣞⣿⡿⣻⣿⠞⠀⠀⠀\n⠀⠀⠀⢠⠏⠄⠐⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠳⢤⣉⢳⠀⠀⠀\n⢀⡠⠖⠉⠀⠀⣠⠇⣿⡿⣿⡿⢹⣿⣿⣿⣿⣧⣠⡀⠀⠈⠉⢢⡀⠀\n⢿⠀⠀⣠⠴⣋⡤⠚⠛⠛⠛⠛⠛⠛⠛⠛⠙⠛⠛⢿⣦⣄⠀⢈⡇⠀\n⠈⢓⣤⣵⣾⠁⣀⣀⠤⣤⣀⠀⠀⠀⠀⢀⡤⠶⠤⢌⡹⠿⠷⠻⢤⡀\n⢰⠋⠈⠉⠘⠋⠁⠀⠀⠈⠙⠳⢄⣀⡴⠉⠀⠀⠀⠀⠙⠂⠀⠀⢀⡇\n⠀⠑⠸⢿⠀⠀⠀⠀⢈⡗⠭⣖⡒⠒⢊⣱⠀⠀⠀⠀⢨⠟⠂⠚⠋⠀\n⠀⠀⠀⠘⠦⣄⣀⣠⠞⠀⠀⠀⠈⠉⠉⠀⠳⠤⠤⡤⠞⠀⠀")
+  }
+  if(message.content === "!nether") {
+    message.channel.send("<:obsidian:1131951814854578197><:obsidian:1131951814854578197><:obsidian:1131951814854578197><:obsidian:1131951814854578197>\n<:obsidian:1131951814854578197><a:netherportalanim:1131950010708279417><a:netherportalanim:1131950010708279417><:obsidian:1131951814854578197>\n<:obsidian:1131951814854578197><a:netherportalanim:1131950010708279417><a:netherportalanim:1131950010708279417><:obsidian:1131951814854578197>\n<:obsidian:1131951814854578197><a:netherportalanim:1131950010708279417><a:netherportalanim:1131950010708279417><:obsidian:1131951814854578197>\n<:obsidian:1131951814854578197><:obsidian:1131951814854578197><:obsidian:1131951814854578197><:obsidian:1131951814854578197>")
   }
 })
 
@@ -158,7 +164,7 @@ const CatWords = ["this is cat is", "THIS CAT IS", "This Cat Is", "this cat is",
 const AchoWords = ["Acho", "acho", "ACHO"]
 const IThinkWords = ["I think", "i think", "I THINK"]
 const IfOnlyWords = ["If only", "IF ONLY", "ifonly", "if only", "IFONLY", "IfOnly"]
-const RuiWords = ["rui", "RUI", "Rui", "rUI", "RuI", "<@584137309423796224>", "ruI", "rUi", "RUi"]
+const RuiWords = ["rui", "RUI", "Rui", "rUI", "RuI", "<@584137309423796224>", "ruI", "rUi", "RUi", "<@1129103654000013383>"]
 const RobloxArgumentWords = ["ClientSided", "Tactical_Neko", "RobloxArgument", "RobloxDrama", "argument", "Argument", "ARGUMENT", "aRGUMENT"]
 const SexUpdate2023 = ["!sex"]
 const BreakPointTrigger = ["Breaking Point", "BREAKING POINT", "breaking point", "breaking Point", "Breaking point", "breaking POINT", "BREAKING point"]
@@ -174,7 +180,7 @@ const CatGIFS = ["https://tenor.com/view/kitty-review-cute-kitty-funny-cat-cat-r
 
 const IfOnlyGIFS = ["https://tenor.com/view/mercy-alcohol-gif-24056926", "https://tenor.com/view/kids-getting-run-over-meme-ad-kids-run-over-gif-22566267", "https://tenor.com/view/dating-gif-26388733", "https://tenor.com/view/ip-twitter-gif-26177251", "https://tenor.com/view/ao-oni-knife-if-only-i-had-a-knife-funny-jazzycars-gif-21089063"]
 
-const RUI_BALLS = ["I need balls", "I NEED BALLS", "https://tenor.com/view/kamishiro-rui-rui-kamishiro-this-is-a-joke-project-sekai-puroseka-gif-25353578", "Paraplégico que anda", "Ho porra tirem a porra da lã"]
+const RUI_BALLS = ["I need balls", "I NEED BALLS", "https://tenor.com/view/kamishiro-rui-rui-kamishiro-this-is-a-joke-project-sekai-puroseka-gif-25353578", "Paraplégico que anda", "Ho porra tirem a porra da lã", "Quero ser um cão au au"]
 
 const ArgumentoCLOSE_UP = ["shut the hell up and jump off a building or smth", "this dumb overconfident anime girl with no right or point to live on this planet wont stop bothering this guy that just wants to chill", "im gonna find this annoying overconfident fatherless loser with no point in life but to exist just for the worst of things to happen to her child", "i have to either 1v1 them or see them leave", "ur dad ran from you", "you probably function like a machine, being used over and over again and now it created you, some random woman that roams around in games where people are mostly chill and randomly start arguments bec"]
 
@@ -333,7 +339,7 @@ client.on("messageCreate", message => {
 })
 
 //activ shenanigans
-const startupmessages = ["with depression", "amogus", "with balls", "KILLKILLKILLKILL", "with windows 10", "miceraft", "a delicate game of chess", "with words", "with ur feelings", "along with u", "HIDE N SEEK BITCH", "with yo mom", "funny dream game", "fbi is spying on u", "REPLIT DOT COM", "famousphobia", "startupmessages", "engineer", "cable management", "minecraft modpacks", "discord 2", "Tinky - unfortunaly no", "with dementia", "divorce sim", "funny winter game", "*stalking", "walter, put your", "I AM THE ONE WHO HEARS", "I got ur ip", "kys", "waterlemon eating", "wrindows_9", "touhou", "YATTA", "rui simulator", "index.js", "README", "discord.js v69", "without motivation", "dw", "dementia", "dementia", "dementia", "OFF", "shut the fuck up, Im balling", "Currently playing:", "Playing", "boblox", "an awful of game of checkers", "Hit error code 429", "/dinsi", "reimu gaming", "miku gaming", "cirno gaming", "rythme gaymes", "cardiac arrest", "amercia sim", "capitalism", "flashii chat addiction desu yo", "YOU ARE PLAYING MINECRAFT", "looking for diamonds", "Balls like jupiter", "is he trolling ?", "Im normal"]
+const startupmessages = ["with depression", "amogus", "with balls", "KILLKILLKILLKILL", "with windows 10", "miceraft", "a delicate game of chess", "with words", "with ur feelings", "along with u", "HIDE N SEEK BITCH", "with yo mom", "funny dream game", "fbi is spying on u", "REPLIT DOT COM", "famousphobia", "startupmessages", "engineer", "cable management", "minecraft modpacks", "discord 2", "Tinky - unfortunaly no", "with dementia", "divorce sim", "funny winter game", "*stalking", "walter, put your", "I AM THE ONE WHO HEARS", "I got ur ip", "kys", "waterlemon eating", "wrindows_9", "touhou", "YATTA", "rui simulator", "index.js", "README", "discord.js v69", "without motivation", "dw", "dementia", "dementia", "dementia", "OFF", "shut the fuck up, Im balling", "Currently playing:", "Playing", "boblox", "an awful of game of checkers", "Hit error code 429", "/dinsi", "reimu gaming", "miku gaming", "cirno gaming", "rythme gaymes", "cardiac arrest", "amercia sim", "capitalism", "flashii chat addiction desu yo", "YOU ARE PLAYING MINECRAFT", "looking for diamonds", "Balls like jupiter", "is he trolling ?", "Im normal", "Error code 418: im a teapot"]
 const randomstartup = startupmessages[Math.floor(Math.random() * startupmessages.length)]
 const watchupmessages = ["over", "you", "twicth", "every single of ur moves", "ur house"]
 
