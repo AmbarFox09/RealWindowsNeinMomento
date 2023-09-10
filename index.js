@@ -168,6 +168,8 @@ const RuiWords = ["rui", "RUI", "Rui", "rUI", "RuI", "<@584137309423796224>", "r
 const RobloxArgumentWords = ["ClientSided", "Tactical_Neko", "RobloxArgument", "RobloxDrama", "argument", "Argument", "ARGUMENT", "aRGUMENT"]
 const SexUpdate2023 = ["!sex"]
 const BreakPointTrigger = ["Breaking Point", "BREAKING POINT", "breaking point", "breaking Point", "Breaking point", "breaking POINT", "BREAKING point"]
+const FrenchPersonTrigger = ["hon hon hon", "French", "Hon Hon Hon", "french", "français", "Français", "FRancês", "Francês", "francês", "FRENCH", "HON HON HON", "FRANÇAIS", "FRANCÊS", "Francez", "francez", "FRANCEZ", "frances", "FRANCES", "Frances", "Hon hon hon"]
+const HivemindTrigger = ["hivemind", "Hivemind", "HIVEMIND", "hIVEMIND", "Breaking Point", "BREAKING POINT", "breaking point", "breaking Point", "Breaking point", "breaking POINT", "BREAKING point"]
 
 //TriggerRandom
 const FBI_CLOSE_UP = ["Can't have shit in Detroit.", "HOW DID THEY FIND ME", "Gotta find a lawyer, I guess.", "ONDE?!", "Officer I can explain", "She's 16, almost 17, which is basically 18."]
@@ -188,8 +190,12 @@ const AprilFools2023 = ["https://media.discordapp.net/attachments/49714279696105
 
 const BreakPointQuotes = ["the food is being microwaved \n peep-peep-peep", "YE \n RACIST \n ALWAYS", "not bueno \n \n yes bueno", "death by radiation \n i didn't even choose you", "this is going to my chernobyl compilation", "microwave", "radiation man", "radioactive man why you give me cancer? \n its my favorite food"]
 
+const Hivemind = ["the hivemind cooks", "the hivemind leaves", "the hivemind appretiates you", "the hivemind does not cook for outsiders", "the hivemind says probably", "the hivemind forgives", "the hivemind works", "the hivemind avenges", "the hivemind is amused", "the hivemind is scared", "the hivemind is not confident", "the hivemind does not want to comment", "the hivemind knows all", "the hivemind knows it", "the hivemind did not ask", "the hivemind has not decided", "the hivemind has short memory", "the hivemind did not ask", "the hivemind did not ask", "the hivemind did not ask", "the hivemind did not ask"]
+
+const FrenchMenQuotes = ["Hon Hon Hon, je suis frances, je non mereçe direitos"]
+
 //TriggerHours (non functional)
-const AmbarQuotes = ["AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "cringe", "lmao quem é esse", "do not disturb the lord", "hm....", "Sim ? oh espera...", "ayo ?", "AmbarFox got revenge on Enderman", "stop annoying him", "get real", "kisses"]
+const AmbarQuotes = ["AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "cringe", "lmao quem é esse", "do not disturb the lord", "hm....", "Sim ? oh espera...", "ayo ?", "AmbarFox got revenge on Enderman", "stop annoying him", "get real", "kisses", "feeble", "the feeble wiggle"]
 
 //TriggerMessages
 client.on('messageCreate', (message) => {
@@ -287,6 +293,20 @@ client.on('messageCreate', (message) => {
       message.channel.send(breakingthepoint)
     }
   })
+  FrenchPersonTrigger.forEach((word) => {
+    const frenchpersonthing = FrenchMenQuotes[Math.floor(Math.random() * FrenchMenQuotes.length)]
+    if(message.author.bot) return false;
+     if (message.content.includes(word)) {
+      message.channel.send(frenchpersonthing)
+    }
+  })
+  HivemindTrigger.forEach((word) => {
+    const hivemindlore = Hivemind[Math.floor(Math.random() * Hivemind.length)]
+    if(message.author.bot) return false;
+     if (message.content.includes(word)) {
+      message.channel.send(hivemindlore)
+    }
+  })
   ratiOWOrds.forEach((word) => {
     if (message.content.includes(word)) {
       message.channel.send("don’t care + didn’t ask + cry about it + who asked + stay mad + get real + L + bleed + mald seethe cope harder + dilate + incorrect + hoes mad + pound sand + basic skill issue + typo + ratio + ur dad left + you fell off + no u + the audacity + triggered + repelled + ur a minor + k. + any askers + get a life + ok and? + cringe + copium + go outside + touch grass + you eat glue + quote tweet + think again + not based + not funny didn’t laugh + You should kys + get good + reported + ad hominem + ok boomer + small p + get sunlight ffs + bad opinion + get rekt + trolled + your loss + muted + banned + kicked + permaban + useless + i slept with ur mom + yo momma + yo dad not real + clown + no bitches allowed + i said it better + tiktok fan + get a life + unfollowed + you're unlovable + redditor + stfu + simp + learn how to type + talk nonsense + trump supporter + your’re a full time discord mod + you’re* + grammar issue + nerd + get clapped + kys + lorem ipsum dolor sit amet + go outside + bleach + lol + gay + retard + autistic + reported + ask deez + ez clap + straight trash + idgaf + ratio again + stay mad + read FAQ + you lost + you dumbass + stay pressed + reverse double take back + pedophile + cancelled + done for + don't give a damn + get a job + sus + baka + sussy baka + get blocked + mad free + freer than air + furry + rip bozo + I bet you like France + slight_smile + aired + cringe again + porn addict + mad cuz bad + your pronouns are: wrong, irrelevant and looser + you suck dick + deal with it + screenshoted your post + karen + jealous + you're deaf + balls + just die + go ahead and cry about it + not straight + eat paper + you lose + count to three + your problem + no one cares + log off + don't care even more + sex offender + sex defender + atheist + not okay + hys + NFT owner + you make bad memes + problematic + fall in line + dog water + you look stupid + you don’t know 2 + 2 is + RaNdOm Is FuNnY + shut + I feel bad for your mom + Final Ratio idiot")
@@ -318,6 +338,11 @@ client.on("messageCreate", message => {
    if(message.content.startsWith("!diz")) {
     if (message.author.bot) return false;
     let messageContent = message.content.replace("!diz", "")
+     message.channel.send(messageContent)
+      }
+   if(message.content.startsWith("!swear")) {
+    if (message.author.bot) return false;
+    let messageContent = message.content.replace("!swear", "I swear people who put '-' at the end of their sentences")
      message.channel.send(messageContent)
       }
    if(message.content.startsWith("!kill")) {

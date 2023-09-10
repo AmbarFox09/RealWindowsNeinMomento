@@ -1,4 +1,4 @@
 {
-	"token": process.env.["token"],
-	"clientId": "995401612145213460"
+  "clientId": "995401612145213460",
+  "token": process.env.["token"]
 }
