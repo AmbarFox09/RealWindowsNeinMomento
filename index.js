@@ -188,7 +188,7 @@ const CatGIFS = ["https://tenor.com/view/kitty-review-cute-kitty-funny-cat-cat-r
 
 const IfOnlyGIFS = ["https://tenor.com/view/mercy-alcohol-gif-24056926", "https://tenor.com/view/kids-getting-run-over-meme-ad-kids-run-over-gif-22566267", "https://tenor.com/view/dating-gif-26388733", "https://tenor.com/view/ip-twitter-gif-26177251", "https://tenor.com/view/ao-oni-knife-if-only-i-had-a-knife-funny-jazzycars-gif-21089063"]
 
-const RUI_BALLS = ["I need balls", "I NEED BALLS", "https://tenor.com/view/kamishiro-rui-rui-kamishiro-this-is-a-joke-project-sekai-puroseka-gif-25353578", "Paraplégico que anda", "Ho porra tirem a porra da lã", "Quero ser um cão au au"]
+const RUI_BALLS = ["I need balls", "I NEED BALLS", "https://tenor.com/view/kamishiro-rui-rui-kamishiro-this-is-a-joke-project-sekai-puroseka-gif-25353578", "Paraplégico que anda", "Ho porra tirem a porra da lã", "Quero ser um cão au au", "hastag itália", "isto aqui é o vietnam, vamos bora *dies*"]
 
 const ArgumentoCLOSE_UP = ["shut the hell up and jump off a building or smth", "this dumb overconfident anime girl with no right or point to live on this planet wont stop bothering this guy that just wants to chill", "im gonna find this annoying overconfident fatherless loser with no point in life but to exist just for the worst of things to happen to her child", "i have to either 1v1 them or see them leave", "ur dad ran from you", "you probably function like a machine, being used over and over again and now it created you, some random woman that roams around in games where people are mostly chill and randomly start arguments bec"]
 
@@ -368,7 +368,7 @@ client.on("messageCreate", message => {
       }
    if(message.content.startsWith("!swear")) {
     if (message.author.bot) return false;
-    let messageContent = message.content.replace("!swear", "I swear people who put '-' at the end of their sentences")
+    let messageContent = message.content.replace("!swear", "I swear people who put '...' at the end of their sentences")
      message.channel.send(messageContent)
       }
    if(message.content.startsWith("!kill")) {
