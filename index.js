@@ -9,6 +9,11 @@ function handleRateLimit() {
 handleRateLimit();
 setInterval(handleRateLimit, 3e5); //3e5 = 300000 (3 w/ 5 zeros)
 
+//funcs
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
 //Cenas Importantes
 const express = require("express");
 const app = express();
@@ -86,9 +91,6 @@ client.on('guildMemberAdd', member => {
     console.log(ACTUALTOAST)
 });
 
-
-
-
 //Texto Simples
 client.on("messageCreate", message => {
 if(message.author.bot) return false;
@@ -123,12 +125,18 @@ if(message.author.bot) return false;
   if(message.content === "wifenlooof") {
     message.channel.send("eselifterbraun")
   }
+  if(message.content === "piracy") {
+  message.channel.send("https://cdn.discordapp.com/attachments/1064661269086486601/1276221506942144543/9e5b66896097eef249edf29f59dbe84bb18b3a3ef8db3df4fb03ec59f7a63a43.mp4?ex=66c8bd66&is=66c76be6&hm=af3f7fabd349d92093e952b04301b7ce22d2a221d5127cb1d137ab6dcf514e42&")
+  }
   if(message.content === "!deez") {
     message.channel.send("nuts")
   }
+  if(message.content === "!pop") {
+    message.channel.send("||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||||pop!||")
+  }
   if(message.content === "!deez nuts") {
     message.channel.send("AHHAHAHAH SO FUNNI")
-  }
+  }  
   if(message.content === "!ping") {
     message.channel.send("@everyone")
   }
@@ -182,13 +190,13 @@ const FBI_CLOSE_UP = ["Can't have shit in Detroit.", "HOW DID THEY FIND ME", "Go
 
 const UnsaidGIFS = ["https://cdn.discordapp.com/attachments/866738433421344789/997510827345195070/unknown.gif", "https://tenor.com/view/me-when-fat-man-when-the-gif-22060334", "https://tenor.com/view/3d-saul-saul-goodman-adamghik-gif-23876766", "https://tenor.com/view/me-when-the-when-the-beamng-gif-22226593", "https://tenor.com/view/hoi4-paradox-eu4-ck3-ck2-gif-23373729", "https://tenor.com/view/walter-faint-when-the-me-gif-22116523", "https://tenor.com/view/pog-dog-heart-locket-me-when-the-gif-24920086", "https://tenor.com/view/me-when-the-gif-19084226", "https://tenor.com/view/when-the-me-sonic-me-when-the-gif-19555618", "https://tenor.com/view/me-when-me-whe-the-when-the-me-when-me-when-the-me-me-the-when-me-the-me-the-when-gif-21875472", "https://tenor.com/view/me-when-the-markiplier-is-that-the-bite-of87-gif-19770814", "https://tenor.com/view/me-when-the-meme-explaining-gif-25104447", "https://tenor.com/view/when-the-gif-19615076", "https://tenor.com/view/me-when-the-when-the-meme-dance-run-gif-17755762", "https://tenor.com/view/me-when-black-me-when-the-meme-funny-gif-24554095", "https://tenor.com/view/me-when-gif-22421002"]
 
-const SaidGIFS = ["https://cdn.discordapp.com/attachments/866738433421344789/1004732651208441978/unknown.png", "https://cdn.discordapp.com/attachments/866738433421344789/1004732651493662750/VID-20220731-WA0001.mp4", "https://tenor.com/view/portugal-gif-25623708", "https://tenor.com/view/portugal-gif-22788330", "https://tenor.com/view/danny-house-meme-help-portugal-portugalyippee-gif-25266502", "https://tenor.com/view/portugal-homem-homem-portugal-average-portuguese-male-gif-17330854", "https://tenor.com/view/portugal-portuguese-portugese-furga-danny-house-gif-24111565", "https://cdn.discordapp.com/attachments/995331136903458938/1004815414641049630/PT2.mp4", "https://cdn.discordapp.com/attachments/995410565314924554/1004821037843755098/PT_slander.mp4", "https://cdn.discordapp.com/attachments/995331136903458938/1004862869839544360/sus.png", "https://tenor.com/view/ab%C3%B3bora-com-leite-ab%C3%B3bora-eu-quando-gif-22387094", "https://cdn.discordapp.com/attachments/995410565314924554/1008478123899244614/1v1.mp4", "https://cdn.discordapp.com/attachments/995410565314924554/1011371090389520516/Screenshot_20220821-155934_YouTube.jpg"]
+const SaidGIFS = ["https://cdn.discordapp.com/attachments/866738433421344789/1004732651208441978/unknown.png", "https://cdn.discordapp.com/attachments/866738433421344789/1004732651493662750/VID-20220731-WA0001.mp4", "https://tenor.com/view/portugal-gif-25623708", "https://tenor.com/view/portugal-gif-22788330", "https://tenor.com/view/danny-house-meme-help-portugal-portugalyippee-gif-25266502", "https://tenor.com/view/portugal-homem-homem-portugal-average-portuguese-male-gif-17330854", "https://tenor.com/view/portugal-portuguese-portugese-furga-danny-house-gif-24111565", "https://cdn.discordapp.com/attachments/995331136903458938/1004815414641049630/PT2.mp4", "https://cdn.discordapp.com/attachments/995410565314924554/1004821037843755098/PT_slander.mp4", "https://cdn.discordapp.com/attachments/995331136903458938/1004862869839544360/sus.png", "https://tenor.com/view/ab%C3%B3bora-com-leite-ab%C3%B3bora-eu-quando-gif-22387094", "https://cdn.discordapp.com/attachments/995410565314924554/1008478123899244614/1v1.mp4", "https://cdn.discordapp.com/attachments/995410565314924554/1011371090389520516/Screenshot_20220821-155934_YouTube.jpg", "https://cdn.discordapp.com/attachments/995331136903458938/1276216382123675728/image4.png?ex=66c8b8a0&is=66c76720&hm=3fb3c6db399fbed1e90dab5a1abe3c0ec7746dda7ba6d5e81ebd15d93fb0a5dc&", "https://cdn.discordapp.com/attachments/995331136903458938/1276216382593306644/Captura_de_ecra_2022-05-22_162431_1.jpg?ex=66c8b8a0&is=66c76720&hm=64e3f3879e906596c1f00afe8b41a31bf0cb9d0cfdaa1f6a718234a3fbba8ab8&", "https://cdn.discordapp.com/attachments/995331136903458938/1276216383138697259/Fcuz9FZWQAUTZvO.jpg?ex=66c8b8a0&is=66c76720&hm=a57ef833ecf3880409ea55737d6657e6ed62b48afb6e09cc05065b6ae09c1db0&"]
 
 const CatGIFS = ["https://tenor.com/view/kitty-review-cute-kitty-funny-cat-cat-review-gif-21188467", "https://tenor.com/view/this-is-cat-is-d-fall-cute-pet-gif-16272929", "https://tenor.com/view/cat-this-cat-is-post-this-cat-cat-flying-gif-25220367", "https://tenor.com/view/cat-this-cat-this-cat-is-f-funny-gif-funny-cat-gif-22143255", "https://tenor.com/view/this-cat-this-cat-is-this-is-this-cat-is-r-this-gif-16319547", "https://tenor.com/view/this-cat-is%C3%B8-swagmaster89original-gif-24386349", "https://tenor.com/view/this-cat-is-cr-gif-25403373", "https://tenor.com/view/omori-mewo-cat-this-cat-is-r-gif-25290143", "https://tenor.com/view/kitty-review-gif-26082295", "https://tenor.com/view/everybody-wants-to-be-my-enemy-gif-25254672", "https://tenor.com/view/kitty-review-kitty-cat-meme-funny-gif-20978803", "https://tenor.com/view/kitty-review-cat-insane-gif-21576551", "https://tenor.com/view/kitty-review-ugly-bingus-kitty-gif-21504000", "https://tenor.com/view/kitty-review-cat-kitty-review-gif-20973774", "https://tenor.com/view/kitty-review-cat-gamer-cat-pro-gamer-gif-21395567", "https://tenor.com/view/what-the-dog-doing-this-cat-just-j-blocked-gif-21619262", "https://tenor.com/view/cat-funny-this-cat-just-j-gif-20559236"]
 
 const IfOnlyGIFS = ["https://tenor.com/view/mercy-alcohol-gif-24056926", "https://tenor.com/view/kids-getting-run-over-meme-ad-kids-run-over-gif-22566267", "https://tenor.com/view/dating-gif-26388733", "https://tenor.com/view/ip-twitter-gif-26177251", "https://tenor.com/view/ao-oni-knife-if-only-i-had-a-knife-funny-jazzycars-gif-21089063"]
 
-const RUI_BALLS = ["I need balls", "I NEED BALLS", "https://tenor.com/view/kamishiro-rui-rui-kamishiro-this-is-a-joke-project-sekai-puroseka-gif-25353578", "Paraplégico que anda", "Ho porra tirem a porra da lã", "Quero ser um cão au au", "hastag itália", "isto aqui é o vietnam, vamos bora *dies*"]
+const RUI_BALLS = ["I need balls", "I NEED BALLS", "https://tenor.com/view/kamishiro-rui-rui-kamishiro-this-is-a-joke-project-sekai-puroseka-gif-25353578", "Paraplégico que anda", "Ho porra tirem a porra da lã", "Quero ser um cão au au", "hastag itália", "isto aqui é o vietnam, vamos bora *dies*", "chava lor tardado", "im a builder", "Hit me hit me now you gotta kiss me"]
 
 const ArgumentoCLOSE_UP = ["shut the hell up and jump off a building or smth", "this dumb overconfident anime girl with no right or point to live on this planet wont stop bothering this guy that just wants to chill", "im gonna find this annoying overconfident fatherless loser with no point in life but to exist just for the worst of things to happen to her child", "i have to either 1v1 them or see them leave", "ur dad ran from you", "you probably function like a machine, being used over and over again and now it created you, some random woman that roams around in games where people are mostly chill and randomly start arguments bec"]
 
@@ -371,6 +379,26 @@ client.on("messageCreate", message => {
     let messageContent = message.content.replace("!swear", "I swear people who put '...' at the end of their sentences")
      message.channel.send(messageContent)
       }
+   if(message.content.startsWith("!roll ")) {
+    if (message.author.bot) return false;
+    let messageContent = message.content.replace("!roll ", "")
+     numbah = getRandomInt(messageContent)
+     numbahh = numbah.toString()
+     message.channel.send(numbahh)
+      }
+   if(message.content.startsWith("!gamble ")) {
+    if (message.author.bot) return false;
+     messageContent = message.content.replace("!gamble ", "")
+     numbah = getRandomInt(messageContent)
+     numbahh = getRandomInt(numbah)
+     numbahhh = getRandomInt(numbahh)
+     numbahhhh = numbahhh.toString()
+     message.channel.send(numbahhhh)
+     if (messageContent == numbahhhh)
+       message.channel.send("Won the lottery !!!!!!!!")
+     else
+       message.channel.send("Aw dang it !")
+      }
    if(message.content.startsWith("!kill")) {
     const KillDialogue = KillRandom[Math.floor(Math.random() * KillRandom.length)]
     const KillGifs = KillGifsRandom[Math.floor(Math.random() * KillGifsRandom.length)]
@@ -417,6 +445,24 @@ client.on('messageCreate', (message) => {
     console.log(randomwatchup)
     message.channel.send("Currently watching:")
     message.channel.send(randomwatchup)
+    }
+  })
+})
+
+//twitter conv
+const TwitterWords = ["https://x.com/"]
+const VeryStupid = ["lazy ass", "fear not, for the bot can fix your ass", "send it like this, is it that hard to do", "stupid"]
+
+client.on('messageCreate', (message) => {
+  if (message.author.bot) return false;
+
+    TwitterWords.forEach((word) => {
+    if(message.author.bot) return false;
+     if (message.content.includes(word)) {
+      const sostupid = VeryStupid[Math.floor(Math.random() * VeryStupid.length)]
+      message.suppressEmbeds(true)
+      actualtw = message.content.replace("https://x.com/", "https://fxtwitter.com/")
+      message.channel.send(sostupid + " " + actualtw)
     }
   })
 })
