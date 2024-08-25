@@ -354,6 +354,7 @@ const MyselfGifsRandom = [""]
 const WidnowsNeinRandom = ["404 not responding", "lmao its not that easy", "NOOOOOOOOOOOOO, I've been defeated", "Auto-Destruction Mode Activating, nuking this server in 3 - 2 - 1..."]
 const KillRandom = [" successfully killed", " successfully trolled", " obliterated", " eliminated", " deleted", " is dominating", " stickbugged", " murdered"]
 const KillGifsRandom = ["https://tenor.com/view/murder-spongebob-rainbow-gif-15431155", "https://tenor.com/view/cry-gif-23674110", "https://tenor.com/view/murder-meme-death-goose-duck-gif-19928127", "https://tenor.com/view/point-gun-shoot-bang-bang-crying-scared-gif-15272562", "https://tenor.com/view/murderer-pillow-gif-25218991", "https://tenor.com/view/kill-gif-19521148", "https://tenor.com/view/1st-degree-murder-omori-aubrey-omori-omori-ecstatic-murder-gif-24163762", "https://tenor.com/view/we-do-a-little-trolling-gif-26181596", "https://tenor.com/view/trolling-smash-death-obliteration-help-gif-20897375", "https://tenor.com/view/we-do-a-little-trolling-tf2-tomfoolery-verbose-gif-21064738", "https://tenor.com/view/trolling-smash-death-obliteration-help-gif-20897375", "https://tenor.com/view/pokeslam-slam-gif-18269254", "https://tenor.com/view/anime-keyboard-delete-you-was-deleted-gif-17895303", "https://tenor.com/view/tyler1-gif-20672032", "https://tenor.com/view/natural-causes-natural-causes-dantist-gif-26229749", "https://c.tenor.com/xhya5u285LkAAAAM/kill-monster.gif"]
+const KredasWords = ["You're not him", "Kredas wannabe", "Bro think they Kredas 💀", "https://cdn.discordapp.com/attachments/995329036039491646/1274363713293520947/petpet.gif?ex=66c892b1&is=66c74131&hm=f36a0b701350b90d2f8590d2057f02ebd54474c4522999238fc575dc4c82cbfc&"]
 
 //CMDS  (!diz , )
 client.on("messageCreate", message => {
@@ -383,22 +384,34 @@ client.on("messageCreate", message => {
     if (message.author.bot) return false;
     let messageContent = message.content.replace("!roll ", "")
      numbah = getRandomInt(messageContent)
+     numbah = (numbah + 1)
      numbahh = numbah.toString()
      message.channel.send(numbahh)
       }
    if(message.content.startsWith("!gamble ")) {
     if (message.author.bot) return false;
      messageContent = message.content.replace("!gamble ", "")
-     numbah = getRandomInt(messageContent)
-     numbahh = getRandomInt(numbah)
-     numbahhh = getRandomInt(numbahh)
-     numbahhhh = numbahhh.toString()
-     message.channel.send(numbahhhh)
-     if (messageContent == numbahhhh)
-       message.channel.send("Won the lottery !!!!!!!!")
-     else
-       message.channel.send("Aw dang it !")
-      }
+     if (messagetContent = "0") {
+       if (message.author.id === "1004855837161951313") {
+        message.channel.send("The king has won")
+       }
+       else {
+        const damnnnn = KredasWords[Math.floor(Math.random() * KredasWords.length)]
+        message.channel.send(damnnnn) 
+       }
+     }
+     else {
+       numbah = getRandomInt(messageContent)
+       numbahh = getRandomInt(numbah)
+       numbahhh = getRandomInt(numbahh)
+       numbahhhh = numbahhh.toString()
+       message.channel.send(numbahhhh)
+       if (messageContent == numbahhhh)
+         message.channel.send("Won the lottery !!!!!!!!")
+       else
+          message.channel.send("Aw dang it !")
+        }
+       }
    if(message.content.startsWith("!kill")) {
     const KillDialogue = KillRandom[Math.floor(Math.random() * KillRandom.length)]
     const KillGifs = KillGifsRandom[Math.floor(Math.random() * KillGifsRandom.length)]
